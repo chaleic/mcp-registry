@@ -224,21 +224,21 @@
       "tags": ["notifications", "utility"],
       "installations": [
         {
-          "name": "NPM Package",
-          "config": "ntfy-mcp-server",
+          "name": "Docker",
+          "config": "ntfy",
           "transports": ["stdio"],
           "parameters": [
-            {
-              "name": "ntfy API Key",
-              "key": "NTFY_API_KEY",
-              "description": "Your ntfy API key.",
-              "required": false
-            },
             {
               "name": "ntfy Default Topic",
               "key": "NTFY_DEFAULT_TOPIC",
               "description": "The default ntfy topic to publish to.",
-              "required": false
+              "required": true
+            },
+            {
+              "name": "ntfy API Key",
+              "key": "NTFY_API_KEY",
+              "description": "Your ntfy API key.",
+              "required": true
             }
           ]
         }
