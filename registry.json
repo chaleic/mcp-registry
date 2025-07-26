@@ -213,6 +213,36 @@
           "transports": ["stdio"]
         }
       ]
+    },
+    {
+      "id": "ntfy",
+      "name": "ntfy",
+      "description": "A publish-subscribe notification service.",
+      "author": "brittany-e",
+      "url": "https://www.npmjs.com/package/ntfy-mcp-server",
+      "category": "Utility",
+      "tags": ["notifications", "utility"],
+      "installations": [
+        {
+          "name": "NPM Package",
+          "config": "ntfy-mcp-server",
+          "transports": ["stdio"],
+          "parameters": [
+            {
+              "name": "ntfy API Key",
+              "key": "NTFY_API_KEY",
+              "description": "Your ntfy API key.",
+              "required": false
+            },
+            {
+              "name": "ntfy Default Topic",
+              "key": "NTFY_DEFAULT_TOPIC",
+              "description": "The default ntfy topic to publish to.",
+              "required": false
+            }
+          ]
+        }
+      ]
     }
   ]
 }
