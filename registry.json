@@ -1,0 +1,218 @@
+{
+  "version": "1.0.0",
+  "generatedAt": 1672531200000,
+  "totalServers": 2,
+  "servers": [
+    {
+      "id": "openmemory",
+      "name": "OpenMemory",
+      "description": "An open source tool for memory management.",
+      "author": "Community",
+      "url": "https://github.com/features/copilot",
+      "category": "AI",
+      "tags": ["memory", "ai", "utility"],
+      "installations": [
+        {
+          "name": "NPM Package",
+          "config": "openmemory",
+          "transports": ["stdio"],
+          "parameters": [
+            {
+              "name": "OpenMemory API Key",
+              "key": "OPENMEMORY_API_KEY",
+              "description": "Your API key for the OpenMemory service.",
+              "placeholder": "sk-...",
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mixpanel",
+      "name": "Mixpanel",
+      "description": "Connects to the official Mixpanel MCP server. Manual configuration of arguments is required after installation.",
+      "author": "Mixpanel",
+      "url": "https://mixpanel.com",
+      "category": "Analytics",
+      "tags": ["analytics", "mixpanel", "sse"],
+      "installations": [
+        {
+          "name": "Remote SSE",
+          "config": "mcp-remote",
+          "transports": ["sse"]
+        }
+      ]
+    },
+    {
+      "id": "mcp-atlassian",
+      "name": "Atlassian",
+      "description": "Connects to Jira and Confluence.",
+      "author": "sooperset",
+      "url": "https://github.com/sooperset/mcp-atlassian",
+      "category": "Productivity",
+      "tags": ["atlassian", "jira", "confluence"],
+      "installations": [
+        {
+          "name": "Docker",
+          "config": "mcp-atlassian",
+          "transports": ["stdio"],
+          "parameters": [
+            {
+              "name": "Atlassian URL",
+              "key": "ATLASSIAN_URL",
+              "description": "The base URL of your Atlassian instance (e.g., https://your-domain.atlassian.net).",
+              "required": true
+            },
+            {
+              "name": "Atlassian Email",
+              "key": "EMAIL",
+              "description": "The email address for your Atlassian account.",
+              "required": true
+            },
+            {
+              "name": "Confluence API Token",
+              "key": "CONFLUENCE_API_TOKEN",
+              "description": "Your Confluence API token.",
+              "required": true
+            },
+            {
+              "name": "Jira API Token",
+              "key": "JIRA_API_TOKEN",
+              "description": "Your Jira API token.",
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "description": "Connect to your Slack workspace.",
+      "author": "korotovsky",
+      "url": "https://github.com/korotovsky/slack-mcp-server",
+      "category": "Communication",
+      "tags": ["slack", "chat"],
+      "installations": [
+        {
+          "name": "Docker",
+          "config": "slack",
+          "transports": ["stdio"],
+          "parameters": [
+            {
+              "name": "Slack XOXC Token",
+              "key": "SLACK_MCP_XOXC_TOKEN",
+              "description": "Your Slack XOXC token.",
+              "required": true
+            },
+            {
+              "name": "Slack XOXD Token",
+              "key": "SLACK_MCP_XOXD_TOKEN",
+              "description": "Your Slack XOXD token.",
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jira-zephyr",
+      "name": "Jira Zephyr",
+      "description": "Manage Jira and Zephyr for test management.",
+      "author": "chaleic",
+      "url": "https://github.com/chaleic/jira-zephyr-mcp",
+      "category": "Testing",
+      "tags": ["jira", "zephyr", "testing"],
+      "installations": [
+        {
+          "name": "Docker",
+          "config": "jira-zephyr",
+          "transports": ["stdio"],
+          "parameters": [
+            {
+              "name": "Atlassian URL",
+              "key": "ATLASSIAN_URL",
+              "description": "The base URL of your Atlassian instance (e.g., https://your-domain.atlassian.net).",
+              "required": true
+            },
+            {
+              "name": "Atlassian Email",
+              "key": "EMAIL",
+              "description": "The email address for your Atlassian account.",
+              "required": true
+            },
+            {
+              "name": "Jira API Token",
+              "key": "JIRA_API_TOKEN",
+              "description": "Your Jira API token.",
+              "required": true
+            },
+            {
+              "name": "Zephyr API Token",
+              "key": "ZEPHYR_API_TOKEN",
+              "description": "Your Zephyr API token.",
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "description": "Connect to your GitHub repositories.",
+      "author": "MCP Community",
+      "url": "https://github.com/mcp-tool",
+      "category": "Development",
+      "tags": ["github", "vcs", "git"],
+      "installations": [
+        {
+          "name": "Docker",
+          "config": "github",
+          "transports": ["stdio"],
+          "parameters": [
+            {
+              "name": "GitHub Personal Access Token",
+              "key": "GITHUB_PERSONAL_ACCESS_TOKEN",
+              "description": "Your GitHub Personal Access Token.",
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "description": "Connect to Context7.",
+      "author": "Context7",
+      "url": "https://context7.com",
+      "category": "AI",
+      "tags": ["context", "ai"],
+      "installations": [
+        {
+          "name": "Remote SSE",
+          "config": "context7",
+          "transports": ["sse"]
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "description": "A simple time utility.",
+      "author": "MCP Community",
+      "url": "https://github.com/mcp-tool",
+      "category": "Utility",
+      "tags": ["time", "utility"],
+      "installations": [
+        {
+          "name": "Docker",
+          "config": "time",
+          "transports": ["stdio"]
+        }
+      ]
+    }
+  ]
+}
